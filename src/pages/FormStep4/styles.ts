@@ -1,0 +1,111 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+  p {
+    font-size: 13px;
+    color: var(--color-2);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    margin: 0 0 24px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  hr {
+    height: 1px;
+    border: 0;
+    background-color: var(--color-7);
+    margin: 24px 0;
+  }
+
+  label {
+    font-size: 13px;
+    color: var(--color-2);
+    display: block;
+    margin-bottom: 24px;
+
+    input {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 18px 14px;
+      border-radius: 10px;
+      border: 2px solid var(--color-3);
+      color: var(--color-1);
+      outline: none;
+      font-size: 15px;
+      background-color: var(--color-6);
+
+      margin-top: 12px;
+      margin-bottom: 12px;
+
+      transition: border 0.2s ease, box-shadow 0.2s ease;
+
+      /* Força a remoção do autocomplete do Chrome/Edge */
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: var(--color-1);
+        transition: background-color 5000s ease-in-out 0s;
+        box-shadow: inset 0 0 20px 20px var(--color-6);
+        border: 2px solid var(--color-3);
+      }
+    }
+  }
+
+  button {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 40px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 24px;
+    transition: all 0.2s ease;
+  }
+
+  button:hover {
+    background-color: var(--color-5);
+  }
+
+  .backButton {
+    background-color: var(--color-3);
+    color: var(--color-1);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 40px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    transition: all 0.2s ease;
+  }
+
+  .backButton:hover {
+    background-color: var(--color-5);
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 24px;
+  }
+
+  span {
+    color: var(--color-2);
+  }
+
+  h3 {
+    font-weight: 500;
+  }
+`;
