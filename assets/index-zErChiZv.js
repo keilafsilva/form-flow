@@ -107,10 +107,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   border-right: 1px solid var(--color-7);
 
   @media (max-width: 768px) {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid var(--color-7);
-    padding-bottom: 16px;
+    display: none;
   }
 `,La=L.div`
   flex: 1;
