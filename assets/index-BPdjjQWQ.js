@@ -82,32 +82,45 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 `,Na=L.div`
   background-color: var(--color-6);
   color: var(--color-1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  min-height: 100vh;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
   overflow-y: auto;
 `,Pa=L.div`
-  margin: auto;
-  margin-top: 40px;
+  margin: 40px auto;
   max-width: 980px;
   display: flex;
   flex-direction: column;
+  padding: 0 16px;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 `,Fa=L.div`
   flex: 1;
   display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `,Ia=L.div`
   width: 250px;
   border-right: 1px solid var(--color-7);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-7);
+    padding-bottom: 16px;
+  }
 `,La=L.div`
   flex: 1;
   padding-left: 40px;
   padding-top: 40px;
+
+  @media (max-width: 768px) {
+    padding-left: 0;
+    padding-top: 24px;
+  }
 `,Ra=L.div`
     padding: 25px 0;
     border-bottom: 1px solid var(--color-7);
